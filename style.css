@@ -1,0 +1,15 @@
+.block{
+  width: calc(100%/16);
+  height: calc(100%/16);
+  box-sizing: border-box;
+  background-color: rgb(221, 209, 209); 
+  border: 1px solid rgb(148, 148, 148) ;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 800px;
+}
