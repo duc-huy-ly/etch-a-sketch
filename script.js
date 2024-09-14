@@ -58,5 +58,9 @@ const resizeButton = document.getElementById('grid-resize');
 resizeButton.addEventListener('click', () => {
   // Shows an alert that asks for how many squares do they want
   let newGridSize = prompt("Enter the size of the grid, between 1 and 100 inclusive");
+  if (newGridSize >= 100 || newGridSize <1){
+    alert("Invalid size given");
+    return;
+  } 
   modifyGrid(newGridSize);
 })
